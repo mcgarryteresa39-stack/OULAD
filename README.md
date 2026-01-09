@@ -78,6 +78,8 @@ About 20 years ago I undertook two statistics courses with the Open University a
 The dataset can be downloaded from here:
 https://analyse.kmi.open.ac.uk/open-dataset
 
+## **Dataset Features and Descriptions**
+
 | **Feature**                     | **Description**                                                                                     |
 |---------------------------------|-----------------------------------------------------------------------------------------------------|
 | code_module                     | The module (course) code, e.g., “AAA”.                                                              |
@@ -110,7 +112,7 @@ https://analyse.kmi.open.ac.uk/open-dataset
 | week_to                         | Last week the activity is available.                                                                |
 
 
-## **Project Features**
+## **Project Methodology**
 
 1. **Data loading:** 
 
@@ -350,3 +352,4 @@ The requirements for this project are:
 
 
  
+
