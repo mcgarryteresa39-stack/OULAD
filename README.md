@@ -330,65 +330,6 @@ Thank the people who provided support through this project.
 
 5.	Open the dashboard file in Power BI/Tableau
 
-Dashboard
-🟨 4. Dashboard Narrative (What your dashboard should answer)
-This is the story your visuals will tell.
-✅ Page 1 — Overview
-•	What is the overall pass/withdrawal rate?
-•	Which demographic groups show the highest risk?
-•	What are the key KPIs (avg score, avg engagement, withdrawal rate)?
-✅ Page 2 — Engagement
-•	How does engagement change over time?
-•	Do pass/fail/withdraw groups show different patterns?
-•	Which activity types drive the most engagement?
-✅ Page 3 — Assessment Performance
-•	How do scores vary by assessment type?
-•	How does lateness affect performance?
-•	Are early assessments predictive of final outcomes?
-✅ Page 4 — Risk Indicators (Optional)
-•	Which features correlate most with withdrawal?
-•	Can we identify at risk students by Week 2 or Week 4?
-🟪 5. Modeling Question (Optional but impressive)
-If you want to include a predictive model:
-Can we predict whether a student will pass, fail, or withdraw using demographic, engagement, and assessment features?
-This allows you to run:
-•	Logistic regression
-•	Random forest
-•	Feature importance
-•	ROC curve
-Even a simple model adds huge value to your portfolio.
-🟫 6. Executive Summary Structure (Use this in your final report)
-Here’s a clean, professional structure:
-✅ 1. Purpose
-Why the analysis matters (retention, performance, early intervention).
-✅ 2. Data
-Brief description of OULAD and key tables.
-✅ 3. Methods
-Python cleaning, feature engineering, EDA, statistics, dashboard.
-✅ 4. Key Findings
-3–5 bullet points:
-•	Engagement is the strongest predictor of success
-•	Late submissions correlate with lower scores
-•	Early disengagement predicts withdrawal
-•	Certain demographic groups show higher risk
-✅ 5. Recommendations
-•	Early warning system based on engagement
-•	Targeted support for high risk groups
-•	Monitoring of assessment submission patterns
-✅ 6. Dashboard
-Screenshots + explanation.
-✅ 7. Limitations
-•	Observational data
-•	No causal inference
-•	Missing variables (motivation, external factors)
-✅ 8. Next Steps
-•	Predictive modeling
-•	Intervention testing
-•	Longitudinal tracking
-
-
-
-
 ## **Tools & Technologies**
 
 The requirements for this project are:
@@ -399,9 +340,13 @@ The requirements for this project are:
 - GitHub for version control and portfolio presentation
 - Data sets
 - PostGres
-Author
-Teresa McGarry Analytics Professional Focused on reproducible workflows, executive dashboards, and portfolio ready data storytelling.
+
+## **Author**
+
+**Teresa McGarry**
+**Analytics Professional**
  
+
 
 
  
