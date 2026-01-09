@@ -162,8 +162,8 @@ Save analysis results in various formats including CSV, PPT, SQL, Word, Text, Ju
 
 # **Installation**
 
-## **Prerequisites**
-- Python 3.7 or higher: pandas, numpy, seaborn, matplotlib, scikit learn, statsmodels
+## **Software Prerequisites**
+- Python 3.7 or higher: pandas, numpy, seaborn, matplotlib, scikit learn, statsmodels, ipykernel
 - pip
 - Trello: Project Management
 - VS Code for development
@@ -352,4 +352,5 @@ The requirements for this project are:
 
 
  
+
 
