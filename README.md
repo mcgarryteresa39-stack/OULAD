@@ -132,12 +132,44 @@ https://analyse.kmi.open.ac.uk/open-dataset
 | pass_distinction_binary      | Numeric   | Target variable: Pass/Distinction = 1; Fail/Withdraw = 0                    | Target                         |
 | best_result                  | Categorical | Best final result across all modules                                       | Performance                    |
 | worst_result                 | Categorical | Worst final result across all modules                                      | Performance                    |
-| gender                       | Numeric   | Gender (Male/Female)                                                        | Demographics                   |
-| age_band                     | Numeric   | Age grouped into 3 bands                                                    | Demographics                   |
-| highest_education            | Numeric   | Highest education level (5 bands)                                           | Demographics                   |
-| imd_band                     | Numeric   | IMD socio-economic band (11 bands incl. Missing)                            | Demographics                   |
-| disability                   | Numeric   | Disability status (Yes/No)                                                  | Demographics                   |
-| region                       | Numeric   | Region: England (10 regions), Scotland, Wales, Ireland                      | Demographics                   |
+| gender                       | One‑hot     | Encoded gender (F, M)                                                        | Demographics                   |
+| age_band                     | One‑hot     | Encoded age bands (0–35, 35–55, 55+)                                         | Demographics                   |
+| highest_education            | One‑hot     | Encoded highest education level (5 bands)                                    | Demographics                   |
+| imd_band                     | One‑hot     | Encoded IMD socio‑economic band (11 bands incl. Missing)                     | Socioeconomic                  |
+| disability                   | One‑hot     | Encoded disability status (Y/N)                                              | Demographics                   |
+| region                       | One‑hot     | Encoded region (England regions, Scotland, Wales, Ireland)                   | Region                         |
+
+## **master_df**
+| Feature Name                 | Type        | Description                                                                 | Category                       |
+|------------------------------|-------------|-----------------------------------------------------------------------------|--------------------------------|
+| id_student                   | Numeric     | Unique student identifier used to join tables                               | —                              |
+| code_module                  | Categorical | Module code (e.g., AAA, BBB)                                                | Module Metadata                |
+| code_presentation            | Categorical | Presentation code (e.g., 2013J, 2014B)                                      | Module Metadata                |
+| num_assessments             | Numeric     | Number of assessments in this module                                        | Assessment Behaviour           |
+| total_score                  | Numeric     | Sum of all assessment scores for this module                                | Assessment Behaviour           |
+| avg_score                    | Numeric     | Average score across assessments                                            | Assessment Behaviour           |
+| total_weight                 | Numeric     | Total assessment weight available in the module                              | Assessment Behaviour           |
+| weighted_score_total         | Numeric     | Sum of scores weighted by assessment weight                                  | Assessment Behaviour           |
+| num_of_prev_attempts         | Numeric     | Number of previous attempts at this module                                   | History & Workload             |
+| studied_credits              | Numeric     | Credits the student is registered for                                        | History & Workload             |
+| total_clicks                 | Numeric     | Total VLE clicks for this module                                             | VLE Engagement                 |
+| active_days                  | Numeric     | Number of unique active VLE days                                             | VLE Engagement                 |
+| unique_vle_activities        | Numeric     | Number of distinct VLE activity types engaged with                           | VLE Engagement                 |
+| avg_clicks                   | Numeric     | Average clicks per active day                                                | VLE Engagement                 |
+| module_presentation_length   | Numeric     | Length of the module presentation in days                                    | Module Metadata                |
+| pass_distinction_binary      | Numeric     | Target: Pass/Distinction = 1; Fail/Withdraw = 0                              | Target                         |
+| result_rank                  | Numeric     | Ordinal ranking of final result (Distinction > Pass > Fail > Withdraw)       | Performance                    |
+| gender                       | One‑hot     | Encoded gender (F, M)                                                        | Demographics                   |
+| age_band                     | One‑hot     | Encoded age bands (0–35, 35–55, 55+)                                         | Demographics                   |
+| highest_education            | One‑hot     | Encoded highest education level (5 bands)                                    | Demographics                   |
+| imd_band                     | One‑hot     | Encoded IMD socio‑economic band (11 bands incl. Missing)                     | Socioeconomic                  |
+| disability                   | One‑hot     | Encoded disability status (Y/N)                                              | Demographics                   |
+| region                       | One‑hot     | Encoded region (England regions, Scotland, Wales, Ireland)                   | Region                         |
+| final_result                 | One‑hot     | Encoded final result (Distinction, Pass, Fail, Withdrawn)                    | Performance                    |
+| assessment_type              | One‑hot     | Encoded assessment type combinations (CMA, TMA, Exam, combos)                | Assessment Type                |
+
+
+
 
 ## **Project Methodology**
 
@@ -379,6 +411,7 @@ The requirements for this project are:
 
 
  
+
 
 
 
