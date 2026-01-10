@@ -111,6 +111,33 @@ https://analyse.kmi.open.ac.uk/open-dataset
 | week_from                       | First week the activity is available.                                                               |
 | week_to                         | Last week the activity is available.                                                                |
 
+## **2 Files**
+## student_level
+
+| Feature Name                 | Type      | Description                                                                 | Category                       |
+|------------------------------|-----------|-----------------------------------------------------------------------------|--------------------------------|
+| id_student                   | Numeric   | Unique ID used to join tables                                               | —                              |
+| num_assessments_total        | Numeric   | Total number of assessments the student attempted across all modules        | Assessment-Related Behaviour   |
+| total_score_total            | Numeric   | Sum of all assessment scores                                                | Assessment-Related Behaviour   |
+| weighted_score_total         | Numeric   | Sum of scores weighted by assessment weight                                 | Assessment-Related Behaviour   |
+| avg_score_mean               | Numeric   | Mean score across all assessments                                           | Assessment-Related Behaviour   |
+| total_weight_completed       | Numeric   | Total assessment weight completed (out of 100 per module)                   | Assessment-Related Behaviour   |
+| total_clicks_total           | Numeric   | Total number of VLE clicks across all activities                            | VLE Engagement                 |
+| total_active_days            | Numeric   | Total unique days active on the VLE                                         | VLE Engagement                 |
+| avg_clicks_student           | Numeric   | Average number of student clicks per module/day                             | VLE Engagement                 |
+| unique_vle_activities_total  | Numeric   | Number of distinct VLE activities participated in                           | VLE Engagement                 |
+| avg_clicks_per_day           | Numeric   | Average clicks per active day across all modules                            | VLE Engagement                 |
+| studied_credits              | Numeric   | Total credits the student is registered for (workload indicator)            | History & Workload             |
+| num_of_prev_attempts         | Numeric   | Number of previous attempts of the module                                   | History & Workload             |
+| pass_distinction_binary      | Numeric   | Target variable: Pass/Distinction = 1; Fail/Withdraw = 0                    | Target                         |
+| best_result                  | Categorical | Best final result across all modules                                       | Performance                    |
+| worst_result                 | Categorical | Worst final result across all modules                                      | Performance                    |
+| gender                       | Numeric   | Gender (Male/Female)                                                        | Demographics                   |
+| age_band                     | Numeric   | Age grouped into 3 bands                                                    | Demographics                   |
+| highest_education            | Numeric   | Highest education level (5 bands)                                           | Demographics                   |
+| imd_band                     | Numeric   | IMD socio-economic band (11 bands incl. Missing)                            | Demographics                   |
+| disability                   | Numeric   | Disability status (Yes/No)                                                  | Demographics                   |
+| region                       | Numeric   | Region: England (10 regions), Scotland, Wales, Ireland                      | Demographics                   |
 
 ## **Project Methodology**
 
@@ -352,5 +379,6 @@ The requirements for this project are:
 
 
  
+
 
 
