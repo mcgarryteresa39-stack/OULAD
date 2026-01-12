@@ -295,12 +295,19 @@ OULAD is an openly available and anonymised dataset. However, even here there ma
 
 5. Data Context: OULAD is the dataset from the Open University and any conclusions and recommendations derived may not be transferable to other contexts/institutions
 
-6. Respect for students: The OULAD dataset represents real students not simply data points. Hence any conclusions or recommendations derived from this dataset should actively seek to support students, treating them in an ethical manner, and not penalise them.  
+6. Respect for students: The OULAD dataset represents real students not simply data points. Hence any conclusions or recommendations derived from this dataset should actively seek to offer solutions and recommendations that support students, treating them in an ethical manner, and not penalise them.  
 
-# **Data privacy, bias or fairness issues with the data**
+## **Data privacy, bias or fairness issues with the data**
 
-## Any legal or societal issues
+The OULAD dataset is anonymised but still contains sensitive demographic and behavioural information, so it must be handled with care to avoid privacy risks. 
 
+Because some groups may be underrepresented and historical outcomes may reflect structural inequalities at the time of the creation of the dataset, models trained on this data may inherit or amplify bias unless fairness is explicitly monitored.
+
+## **Any legal or societal issues**
+
+The OULAD dataset represents real educational practices within a specific institution (The Open Univeristy), so analyses based on it may unintentionally reinforce existing societal inequalities or misinform policy if interpreted without context.
+
+Although the dataset is openly licensed, its use still carries ethical responsibilities: researchers should avoid overgeneralising findings to other institutions or populations and remain aware that modelling educational outcomes can influence perceptions of fairness, access, and student support at a societal level.
 
 ## **Executive Summary**
 The key findings from this research are:
@@ -411,6 +418,7 @@ The requirements for this project are:
 
 
  
+
 
 
 
